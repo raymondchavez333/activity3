@@ -48,10 +48,10 @@ void main(){
 
         // for loop for getting the items based on the current index
         for(int i = 0; i < products.length; i++){
-          
+          print("$products[i] $prices[i] $quantities[i] $totalAmount           ");
         }
 
-        print("$products[0] $prices[0] $quantities[0]. $totalAmount           ");
+        
     }
 
   }
