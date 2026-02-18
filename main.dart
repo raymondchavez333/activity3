@@ -9,6 +9,8 @@ void main(){
     print("3. Sell Product");
     print("4. Exit");
 
+    stdout.write("Enter Choice: ");
+    String choice = stdin.readLineSync() ?? '';
     
 
   }
