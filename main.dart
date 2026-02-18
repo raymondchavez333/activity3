@@ -14,6 +14,7 @@ void main(){
 
     var products =  [];
     var prices = [];
+    var quantities =[];
 
     switch(choice){
 
@@ -25,6 +26,10 @@ void main(){
         stdout.write("Enter price: ");
         int price = int.parse(stdin.readLineSync() ?? '0');
         prices.add(price);
+
+        stdout.write("Enter quantity: ");
+        int quantity = int.parse(stdin.readLineSync() ?? '0');
+        quantities.add(quantity);
 
         
         break;
