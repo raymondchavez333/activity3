@@ -4,9 +4,9 @@ void main(){
   int choice= 0;
 
   do {
-    print("-----------------------------------------------------");
-    print("                   Inventory System                  ");
-    print("-----------------------------------------------------");
+    print("---------------------------------------------------------------");
+    print("                        Inventory System                       ");
+    print("---------------------------------------------------------------");
     print("1. Add Product");
     print("2. View Products");
     print("3. Sell Products");
@@ -18,7 +18,7 @@ void main(){
     var products =  [];
     var prices = [];
     var quantities =[];
-
+    int totalAmount = 0;
     switch(choice){
 
       case '1':
@@ -38,12 +38,12 @@ void main(){
         break;
       
       case '2':
-        print("-----------------------------------------------------");
-        print("                   Inventory System                  ");
-        print("-----------------------------------------------------");
-        print("Product Name    Price        Quantity    Amount      ");
-        print("-----------------------------------------------------");
-        print("$products[0]    $prices[0]   $");
+        print("---------------------------------------------------------------");
+        print("                        Inventory System                       ");
+        print("---------------------------------------------------------------");
+        print("Product Name    Price        Quantity        Amount            ");
+        print("---------------------------------------------------------------");
+        print("$products[0]    $prices[0]   $quantities[0]. $");
     }
 
   }
