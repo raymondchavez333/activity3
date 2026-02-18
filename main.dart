@@ -18,6 +18,11 @@ void main(){
       case '1':
         stdout.write("Enter product name: ");
         String productName = stdin.readLineSync() ?? '';
+        products.add(productName);
+
+        stdout.write("Enter price: ");
+        int price = int.parse(stdin.readLineSync() ?? '0');
+        
         break;
       
     }
