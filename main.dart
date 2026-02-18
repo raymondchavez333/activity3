@@ -9,7 +9,7 @@ void main(){
     print("-------------------------------------------");
     print("1. Add Product");
     print("2. View Products");
-    print("3. Sell Product");
+    print("3. Sell Products");
     print("4. Exit");
 
     stdout.write("Enter Choice: ");
@@ -34,6 +34,7 @@ void main(){
         int quantity = int.parse(stdin.readLineSync() ?? '0');
         quantities.add(quantity);
 
+        print("Product added successfully.");
         
         break;
       
