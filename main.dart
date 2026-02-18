@@ -31,7 +31,7 @@ void main(){
         int price = int.parse(stdin.readLineSync() ?? '0');
         prices.add(price);
         totalAmount += price;
-        
+
         stdout.write("Enter quantity: ");
         int quantity = int.parse(stdin.readLineSync() ?? '0');
         quantities.add(quantity);
@@ -45,6 +45,12 @@ void main(){
         print("---------------------------------------------------------------");
         print("Product Name    Price        Quantity        Amount            ");
         print("---------------------------------------------------------------");
+
+        // for loop for getting the items based on the current index
+        for(int i = 0; i < products.length; i++){
+          
+        }
+
         print("$products[0] $prices[0] $quantities[0]. $totalAmount           ");
     }
 
