@@ -19,6 +19,7 @@ void main(){
     var prices = [];
     var quantities =[];
     int totalAmount = 0;
+
     switch(choice){
 
       case '1':
@@ -29,7 +30,8 @@ void main(){
         stdout.write("Enter price: ");
         int price = int.parse(stdin.readLineSync() ?? '0');
         prices.add(price);
-
+        totalAmount += price;
+        
         stdout.write("Enter quantity: ");
         int quantity = int.parse(stdin.readLineSync() ?? '0');
         quantities.add(quantity);
@@ -43,7 +45,7 @@ void main(){
         print("---------------------------------------------------------------");
         print("Product Name    Price        Quantity        Amount            ");
         print("---------------------------------------------------------------");
-        print("$products[0]    $prices[0]   $quantities[0]. $");
+        print("$products[0] $prices[0] $quantities[0]. $totalAmount           ");
     }
 
   }
