@@ -4,6 +4,9 @@ void main(){
   int choice= 0;
 
   do {
+    print("-------------------------------------------");
+    print("              Inventory System             ");
+    print("-------------------------------------------");
     print("1. Add Product");
     print("2. View Products");
     print("3. Sell Product");
