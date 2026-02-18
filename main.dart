@@ -13,6 +13,8 @@ void main(){
     String choice = stdin.readLineSync() ?? '';
 
     var products =  [];
+    var prices = [];
+
     switch(choice){
 
       case '1':
@@ -22,6 +24,8 @@ void main(){
 
         stdout.write("Enter price: ");
         int price = int.parse(stdin.readLineSync() ?? '0');
+        prices.add(price);
+
         
         break;
       
