@@ -49,6 +49,8 @@ void main() {
         print("Product Name\tPrice\tQuantity\tAmount");
         print("---------------------------------------------------------------");
 
+        int totalAmount = 0;
+
         if(products.isEmpty){
           print("No products available.");
         } else {
@@ -56,9 +58,12 @@ void main() {
           for(int i = 0; i < products.length; i++){
 
             int amount = prices[i] * quantities[i];
+            totalAmount += amount;
 
             print("${products[i]}\t\t${prices[i]}\t${quantities[i]}\t\t$amount");
           }
+          print("---------------------------------------------------------------");
+          print("TOTAL AMOUNT: $totalAmount");
         }
 
         break;
